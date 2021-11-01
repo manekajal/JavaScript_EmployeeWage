@@ -17,6 +17,7 @@ const IS_FULL_TIME=2;
 const PART_TIME_HOURS=4;
 const FULL_TIME_HOURS=8;
 const WAGEE_PER_HOUR=20;
+const NUM_OF_WORKING_DAYS=20;
 
 let empHrs=0;
 empCheck=Math.floor(Math.random() * 10) % 3;
@@ -46,6 +47,7 @@ function getWorkingHours(eCheck){
             return 0;       
     }
 }
+let totalEmpHrs=0;
 let eCheck=Math.floor(Math.random()*10)%3;
 empHrs=getWorkingHours(eCheck);
 empWage=empHrs*WAGEE_PER_HOUR;
